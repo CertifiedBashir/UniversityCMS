@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Tazkiyah University, Zaria — Nigeria's first approved all-female university. Offering B.Sc. degrees in Allied Health Sciences, Science & Computing, and Management & Social Sciences.">
+  <meta name="keywords"
+    content="Tazkiyah University, all-female university Nigeria, female university Zaria, Kaduna university, JAMB admissions, nursing science, computer science, business administration Nigeria">
+  <meta property="og:title" content="Tazkiyah University — Nigeria's First All-Female University">
+  <meta property="og:description" content="Nigeria's First All-Female University — Zaria, Kaduna State">
+  <meta property="og:type" content="website">
+
+  <title>Tazkiyah University | Nigeria's First All-Female University</title>
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2288%22>🌙</text></svg>">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet (includes @import for Google Fonts) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+       LOADING SCREEN
+  ══════════════════════════════════════════════════════════ -->
+  <div id="loading-screen" role="status" aria-live="polite" aria-label="Loading Tazkiyah">
+    <div class="loading-logo">Taz<span>kiyah</span></div>
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION (content injected dynamically from /api/menus)
+  ══════════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="/" class="nav-logo" aria-label="Tazkiyah Islamic School — Home">
+        <div class="nav-logo-icon" aria-hidden="true">T</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Tazkiyah University</span>
+          <span class="nav-logo-tag">All-Female University, Zaria</span>
+        </div>
+      </a>
+
+      <!-- Dynamic menu (populated by app.js from API) -->
+      <ul id="nav-menu" role="menubar" aria-label="Site navigation"></ul>
+
+      <!-- Apply Now CTA -->
+      <a href="/admissions" class="nav-link nav-apply" role="menuitem">Apply Now</a>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MAIN APP CONTAINER (all page content rendered here by JS)
+  ══════════════════════════════════════════════════════════ -->
+  <main id="app" role="main"></main>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="/" class="nav-logo" aria-label="Tazkiyah University Home">
+            <div class="nav-logo-icon" aria-hidden="true">T</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Tazkiyah University</span>
+              <span class="nav-logo-tag">Zaria, Kaduna State</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Nigeria's first approved all-female university, founded by Professor Ibrahim Maqari.
+            Located on Chikaji Road, Zaria, Kaduna State — combining academic excellence with
+            moral and spiritual character development.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook">f</a>
+            <a href="#" class="social-btn" aria-label="Twitter / X">𝕏</a>
+            <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+            <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <!-- Quick links (dynamic — populated by app.js) -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links" id="footer-links"></ul>
+        </div>
+
+        <!-- Programs links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Faculties</h4>
+          <ul class="footer-links">
+            <li><a href="/faculty-allied-health" class="footer-link">Allied Health Sciences</a></li>
+            <li><a href="/faculty-science-computing" class="footer-link">Science &amp; Computing</a></li>
+            <li><a href="/faculty-management-social" class="footer-link">Management &amp; Social Sciences</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span class="contact-address">Chikaji Road, Zaria, Kaduna State, Nigeria</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <span class="contact-phone">+234 800 123 4567</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span class="contact-email">info@tazkiyah.edu.ng</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span class="contact-admissions">admissions@tazkiyah.edu.ng</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕒</span>
+            <span>Mon – Fri: 8:00am – 4:00pm</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p>© 2025 <span>Tazkiyah University</span>. All rights reserved.</p>
+          <p>Nigeria's First All-Female University · <span>Zaria, Kaduna State</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SCRIPTS  (order matters — config.js → api.js → page renderers → app.js)
+  ══════════════════════════════════════════════════════════ -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/page.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
